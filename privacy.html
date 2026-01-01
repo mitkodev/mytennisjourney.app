@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Privacy Policy - My Tennis Journey</title>
+    <meta name="description" content="Privacy Policy for My Tennis Journey app. Your data is yours - we never access, collect, or share your personal information.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --sage: #408059;
+            --mint: #66B385;
+            --sand: #D9A640;
+            --rose: #E05966;
+            --cream: #FAF5EE;
+            --text-primary: #1a1a1a;
+            --text-secondary: #6b7280;
+            --background: #ffffff;
+            --card-bg: #f9fafb;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+            color: var(--text-primary);
+            line-height: 1.7;
+            background: var(--background);
+        }
+
+        /* Navigation */
+        nav {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            background: rgba(255, 255, 255, 0.9);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            z-index: 1000;
+            padding: 1rem 2rem;
+            border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .nav-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            display: flex;
+            align-items: center;
+            gap: 0.75rem;
+            font-weight: 700;
+            font-size: 1.25rem;
+            color: var(--sage);
+            text-decoration: none;
+        }
+
+        .logo-icon {
+            width: 36px;
+            height: 36px;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .logo-icon img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.75rem 1.5rem;
+            border-radius: 12px;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-decoration: none;
+            transition: all 0.2s;
+            cursor: pointer;
+            border: none;
+        }
+
+        .btn-secondary {
+            background: var(--card-bg);
+            color: var(--text-primary);
+        }
+
+        .btn-secondary:hover {
+            background: #f0f1f3;
+        }
+
+        /* Main Content */
+        .policy-header {
+            padding: 8rem 2rem 3rem;
+            background: linear-gradient(180deg, var(--cream) 0%, var(--background) 100%);
+            text-align: center;
+        }
+
+        .policy-header h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin-bottom: 1rem;
+            color: var(--text-primary);
+        }
+
+        .policy-header p {
+            color: var(--text-secondary);
+            font-size: 1.1rem;
+        }
+
+        .policy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 3rem 2rem 6rem;
+        }
+
+        .policy-section {
+            margin-bottom: 3rem;
+        }
+
+        .policy-section h2 {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            color: var(--sage);
+        }
+
+        .policy-section h3 {
+            font-size: 1.15rem;
+            font-weight: 600;
+            margin-bottom: 0.75rem;
+            margin-top: 1.5rem;
+            color: var(--text-primary);
+        }
+
+        .policy-section p {
+            color: var(--text-secondary);
+            margin-bottom: 1rem;
+        }
+
+        .policy-section ul {
+            color: var(--text-secondary);
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .policy-section li {
+            margin-bottom: 0.5rem;
+        }
+
+        .highlight-box {
+            background: linear-gradient(135deg, rgba(64, 128, 89, 0.08), rgba(102, 179, 133, 0.08));
+            border-left: 4px solid var(--sage);
+            padding: 1.5rem;
+            border-radius: 0 12px 12px 0;
+            margin: 1.5rem 0;
+        }
+
+        .highlight-box p {
+            color: var(--text-primary);
+            font-weight: 500;
+            margin-bottom: 0;
+        }
+
+        .last-updated {
+            text-align: center;
+            color: var(--text-secondary);
+            font-size: 0.9rem;
+            padding-top: 2rem;
+            border-top: 1px solid rgba(0, 0, 0, 0.08);
+        }
+
+        /* Footer */
+        footer {
+            padding: 3rem 2rem;
+            background: var(--card-bg);
+            border-top: 1px solid rgba(0, 0, 0, 0.05);
+        }
+
+        .footer-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1.5rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+        }
+
+        .footer-links a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: color 0.2s;
+        }
+
+        .footer-links a:hover {
+            color: var(--sage);
+        }
+
+        .footer-copyright {
+            color: var(--text-secondary);
+            font-size: 0.85rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 600px) {
+            .policy-header h1 {
+                font-size: 1.75rem;
+            }
+
+            .policy-section h2 {
+                font-size: 1.25rem;
+            }
+
+            .footer-content {
+                flex-direction: column;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><img src="MyTennisJourneyLogo.png" alt="My Tennis Journey Logo"></div>
+                My Tennis Journey
+            </a>
+            <a href="index.html" class="btn btn-secondary">← Back to Home</a>
+        </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="policy-header">
+        <h1>Privacy Policy</h1>
+        <p>Your data is yours. We believe in complete privacy.</p>
+    </header>
+
+    <!-- Content -->
+    <main class="policy-content">
+        <section class="policy-section">
+            <h2>Our Privacy Commitment</h2>
+            <div class="highlight-box">
+                <p>My Tennis Journey is designed with privacy at its core. Your tennis data stays on your device and belongs entirely to you. We may collect anonymous analytics to improve the app, but this data has no direct link to you as an individual.</p>
+            </div>
+            <p>We built My Tennis Journey for tennis players who want a personal, private space to track their progress. We respect your privacy completely—your sessions, journal entries, and personal content are never accessed or shared.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2>Data Ownership</h2>
+            <p><strong>You own 100% of your data.</strong> All the information you enter into My Tennis Journey—including your sessions, journal entries, match records, racket information, and top moments—belongs solely to you.</p>
+            <p>Your data is:</p>
+            <ul>
+                <li>Stored locally on your device only</li>
+                <li>Never transmitted to external servers</li>
+                <li>Never accessible by us or anyone else</li>
+                <li>Completely under your control</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2>What We Don't Collect</h2>
+            <p>My Tennis Journey does not collect or have access to your personal content. Specifically, we do not collect:</p>
+            <ul>
+                <li>Personal information (name, email, phone number)</li>
+                <li>Location data</li>
+                <li>Your tennis session data, journal entries, or any content you create</li>
+                <li>Any data that can directly identify you as an individual</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2>Anonymous Analytics & Crash Reporting</h2>
+            <p>To improve My Tennis Journey and fix issues, we may use anonymous analytics and crash reporting services. This helps us:</p>
+            <ul>
+                <li>Identify and fix bugs and crashes</li>
+                <li>Understand which features are most used</li>
+                <li>Improve app performance and stability</li>
+                <li>Make better decisions about future features</li>
+            </ul>
+            <p><strong>Important:</strong> This data is completely anonymous and has no direct link to you as a customer. We cannot identify individual users from this data. It includes only:</p>
+            <ul>
+                <li>General app usage patterns (e.g., which screens are visited)</li>
+                <li>Crash logs and error reports</li>
+                <li>Device type and operating system version</li>
+                <li>App version information</li>
+            </ul>
+            <p>This anonymous data never includes your tennis sessions, journal entries, match records, or any personal content you create in the app.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2>No Advertising or Tracking</h2>
+            <p>We do not use any advertising networks or invasive tracking tools. There are:</p>
+            <ul>
+                <li>No ads in the app</li>
+                <li>No advertising identifiers collected</li>
+                <li>No social media tracking pixels</li>
+                <li>No selling or sharing of data with third parties</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2>Local Storage Only</h2>
+            <p>All your data is stored locally on your iPhone or iPad using Apple's secure on-device storage. This means:</p>
+            <ul>
+                <li>Your data never leaves your device</li>
+                <li>Only you can see your tennis journey</li>
+                <li>Deleting the app removes all data from your device</li>
+                <li>Your data is protected by your device's security features (Face ID, Touch ID, passcode)</li>
+            </ul>
+        </section>
+
+        <section class="policy-section">
+            <h2>iCloud Backup</h2>
+            <p>If you have iCloud Backup enabled on your device, your app data may be included in your device backup. This is managed entirely by Apple and your personal iCloud settings. We have no access to your iCloud backups.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2>App Store</h2>
+            <p>When you download My Tennis Journey from the App Store, Apple may collect certain information as described in Apple's Privacy Policy. This is handled entirely by Apple, and we do not receive any personal information about you from Apple.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2>Children's Privacy</h2>
+            <p>My Tennis Journey does not collect personal information from anyone, including children under the age of 13. The app is safe for users of all ages.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2>Changes to This Policy</h2>
+            <p>We may update this Privacy Policy from time to time. Any changes will be posted on this page with an updated revision date. Our commitment to not collecting your data will not change.</p>
+        </section>
+
+        <section class="policy-section">
+            <h2>Contact Us</h2>
+            <p>If you have any questions about this Privacy Policy or our privacy practices, please contact us at: support [at] mytennisjourney [dot] app</p>
+        </section>
+
+        <p class="last-updated">Last updated: January 1, 2026</p>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <a href="index.html" class="logo">
+                <div class="logo-icon"><img src="MyTennisJourneyLogo.png" alt="My Tennis Journey Logo"></div>
+                My Tennis Journey
+            </a>
+            <div class="footer-links">
+                <a href="privacy.html">Privacy Policy</a>
+                <a href="mailto:support@mytennisjourney.app">Contact</a>
+            </div>
+            <p class="footer-copyright">© 2026 My Tennis Journey. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
